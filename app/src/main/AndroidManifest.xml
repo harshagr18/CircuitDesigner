@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AlertDialog.AppCompat.Light">
-        <activity android:name=".SingleStage"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".SingleStage"></activity>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
