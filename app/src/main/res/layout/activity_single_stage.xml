@@ -31,11 +31,11 @@
         android:text="CE amplifier"
         android:textSize="36sp"
         android:textColor="#545454"
-        android:background="@drawable/CEamp"
+        android:background="@drawable/ceamp"
         android:padding="50dp" />
 
     <Button
-        android:background="@drawable/CSamp"
+        android:background="@drawable/csamp"
         android:layout_width="match_parent"
         android:text="CS amplifier"
         android:textSize="36sp"
