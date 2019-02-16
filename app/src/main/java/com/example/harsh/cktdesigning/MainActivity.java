@@ -12,15 +12,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button SingleStage = (Button) findViewById(R.id.SingleStage);
 
+
+        Button SingleStage = (Button) findViewById(R.id.SingleStage);
         SingleStage.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent numbersIntent = new Intent(MainActivity.this, SingleStage.class);
-            startActivity(numbersIntent);
+            Intent LaunchSingle = new Intent(MainActivity.this, SingleStage.class);
+            startActivity(LaunchSingle);
             }
         });
 
+
+        Button MultiStage = (Button) findViewById(R.id.MultiStage);
+        MultiStage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent LaunchMulti = new Intent(MainActivity.this, MultiStage.class);
+                startActivity(LaunchMulti);
+            }
+        });
     }
 }
