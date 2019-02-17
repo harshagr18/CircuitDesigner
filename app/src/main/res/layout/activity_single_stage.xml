@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SingleStage">
 
     <TextView
         android:layout_width="match_parent"
@@ -29,6 +29,7 @@
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
         android:text="CE amplifier"
+        android:id="@+id/CeAmp"
         android:textSize="36sp"
         android:textColor="#545454"
         android:background="@drawable/ceamp"
@@ -37,6 +38,7 @@
     <Button
         android:background="@drawable/csamp"
         android:layout_width="match_parent"
+        android:id="@+id/CsAmp"
         android:text="CS amplifier"
         android:textSize="36sp"
         android:textColor="#545454"
