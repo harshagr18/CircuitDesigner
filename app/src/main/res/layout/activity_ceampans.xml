@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    android:orientation="vertical"
-    tools:context=".ceamplifier">
+    tools:context=".ceampans">
 
     <TextView
         android:layout_width="match_parent"
@@ -36,17 +35,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ceimage"
         android:textSize="24sp"
-        android:id="@+id/VoltageGain"
+        android:id="@+id/R1"
         android:textColor="#FFFFFF"
         android:layout_marginLeft="36dp"
-        android:text="Voltage gain(Av)"/>
+        android:text="R1"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/VoltageGain"
-        android:hint="Av"
-        android:id="@+id/VoltageGainBox"
+        android:layout_toRightOf="@+id/R1"
+        android:hint="R1"
+        android:id="@+id/R1Box"
         android:textColorHint="#9B9A9A"
         android:layout_below="@+id/ceimage"
         android:layout_marginLeft="36dp"
@@ -56,57 +55,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/VoltageGain"
+        android:layout_below="@+id/R1"
         android:textSize="24sp"
-        android:id="@+id/OutputVoltage"
+        android:id="@+id/R2"
         android:textColor="#FFFFFF"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="36dp"
-        android:text="OutputVoltage(Vo)"/>
+        android:text="R2"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/OutputVoltage"
-        android:hint="Vo"
-        android:id="@+id/OutputVoltageBox"
+        android:layout_toRightOf="@+id/R2"
+        android:hint="R2"
+        android:id="@+id/R2Box"
         android:textColorHint="#9B9A9A"
-        android:layout_below="@+id/VoltageGain"
-        android:layout_marginLeft="36dp"
-        android:textSize="24dp"
-        android:textColor="#FFFFFF"/>
-
-    <CheckBox
-        android:id="@+id/rmsCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/VoltageGain"
-        android:layout_toRightOf="@id/OutputVoltageBox"
-        android:text="RMS?"
-        android:visibility="visible"
-        android:layout_marginTop="10dp"
-        android:textColor="#FFFFFF" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/OutputVoltage"
-        android:textSize="24sp"
-        android:id="@+id/LowerFrequency"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="36dp"
-        android:text="Lower Frequency(Fl)"/>
-
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/LowerFrequency"
-        android:hint="Fl"
-        android:textColorHint="#9B9A9A"
-        android:id="@+id/LowerFrequencyBox"
-        android:layout_below="@+id/OutputVoltage"
+        android:layout_below="@+id/R1"
         android:layout_marginLeft="36dp"
         android:textSize="24dp"
         android:textColor="#FFFFFF"/>
@@ -114,22 +78,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/LowerFrequency"
+        android:layout_below="@+id/R2"
         android:textSize="24sp"
-        android:id="@+id/BetaValue"
+        android:id="@+id/RC"
         android:textColor="#FFFFFF"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="36dp"
-        android:text="Beta Value(B)"/>
+        android:text="RC"/>
+
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/BetaValue"
-        android:hint="B"
+        android:layout_toRightOf="@+id/RC"
+        android:hint="RC"
         android:textColorHint="#9B9A9A"
-        android:id="@+id/BetaValueBox"
-        android:layout_below="@+id/LowerFrequency"
+        android:id="@+id/RCBox"
+        android:layout_below="@+id/R2"
         android:layout_marginLeft="36dp"
         android:textSize="24dp"
         android:textColor="#FFFFFF"/>
@@ -137,45 +102,116 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/BetaValue"
+        android:layout_below="@+id/RC"
+        android:textSize="24sp"
+        android:id="@+id/RE"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="36dp"
+        android:text="RE"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/RE"
+        android:hint="RE"
+        android:textColorHint="#9B9A9A"
+        android:id="@+id/REBox"
+        android:layout_below="@+id/RC"
+        android:layout_marginLeft="36dp"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RE"
+        android:textSize="24sp"
+        android:id="@+id/C1"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="36dp"
+        android:text="C1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/C1"
+        android:hint="C1"
+        android:textColorHint="#9B9A9A"
+        android:id="@+id/C1Box"
+        android:layout_below="@+id/RE"
+        android:layout_marginLeft="36dp"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/C1"
+        android:textSize="24sp"
+        android:id="@+id/C2"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="36dp"
+        android:text="C2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/C2"
+        android:hint="C2"
+        android:textColorHint="#9B9A9A"
+        android:id="@+id/C2Box"
+        android:layout_below="@+id/C1"
+        android:layout_marginLeft="36dp"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/C2"
+        android:textSize="24sp"
+        android:id="@+id/CE"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="36dp"
+        android:text="CE"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/CE"
+        android:hint="CE"
+        android:textColorHint="#9B9A9A"
+        android:id="@+id/CEBox"
+        android:layout_below="@+id/C2"
+        android:layout_marginLeft="36dp"
+        android:textSize="24dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CE"
         android:textSize="24sp"
         android:id="@+id/Vcc"
         android:textColor="#FFFFFF"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="36dp"
-        android:text="Vcc Value(Vcc)"/>
+        android:text="Vcc"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/Vcc"
+        android:layout_toRightOf="@+id/CE"
         android:hint="Vcc"
         android:textColorHint="#9B9A9A"
         android:id="@+id/VccBox"
-        android:layout_below="@+id/BetaValue"
+        android:layout_below="@+id/CE"
         android:layout_marginLeft="36dp"
         android:textSize="24dp"
         android:textColor="#FFFFFF"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Vcc"
-        android:id="@+id/tip"
-        android:textSize="24sp"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp"
-        android:textAlignment="center"
-        android:text="Enter 0 for default"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tip"
-        android:layout_marginTop="10dp"
-        android:id="@+id/Submit"
-        android:layout_marginLeft="150dp"
-        android:text="SUBMIT"
-        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
