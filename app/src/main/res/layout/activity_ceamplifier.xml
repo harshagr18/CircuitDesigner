@@ -29,7 +29,7 @@
         android:padding="36dp"
         android:id="@+id/ceimage"
         android:layout_below="@+id/mainHeading"
-        android:src="@drawable/ceampp" />
+        android:src="@drawable/ceamp_small" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/EnterDetails"
-        android:text="EnterHere"
+        android:hint="Enter details"
+        android:textColorHint="#9B9A9A"
         android:layout_below="@+id/ceimage"
         android:layout_marginLeft="36dp"
         android:textSize="24dp"
