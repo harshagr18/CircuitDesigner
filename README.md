@@ -9,7 +9,7 @@ Android Studio
 - XML
 - Java
 
-![alt text](screenshot.png%20)
+![alt text](screenshot.png)
 
 
 The project is still a work in progress, only 1 section is done yet.
