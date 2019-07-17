@@ -9,4 +9,7 @@ Android Studio
 - XML
 - Java
 
-![alt text](http://url/to/img.png)
+![alt text](screenshot.png)
+
+
+The project is still a work in progress, only 1 section is done yet.
